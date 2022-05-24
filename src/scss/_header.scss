@@ -1,0 +1,57 @@
+@use 'variables' as *;
+
+
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1.875rem 10%;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.nav__links {
+    list-style: none;
+    & li {
+        display: inline-block;
+        padding: 0px 1.25rem;
+
+        & a:hover{
+            transition: all 0.3s ease-in-out 0s;
+            color: $kindaBlack;
+        }
+    }
+}
+
+.cta__links {
+    margin-left:auto;
+    list-style: none;
+    & li {
+
+        display: inline-block;
+        padding: 0px 1.25rem;
+
+        & a:hover{
+            transition: all 0.3s ease-in-out 0s;
+            color: $kindaBlack;
+        }
+
+    }
+}
+
+button {
+    padding: .56rem 1.56rem;
+    border-color: $mediumGray;
+    border-radius: 1rem;
+    background-color: $almostWhite; 
+
+    &:hover {
+        cursor: pointer;
+        transition: all 0.3s ease-in-out 0s;
+        color: $kindaBlack;
+        border-color: $kindaBlack;
+    }
+
+}

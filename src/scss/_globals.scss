@@ -1,0 +1,21 @@
+@use 'variables' as *;
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body {
+    font-family: "Epilogue", sans-serif;
+    background-color: $almostWhite;
+}
+
+li, a, button {
+    font-weight: 500;
+    font-size: $font-small;
+    color: $mediumGray;
+    text-decoration: none;
+}
+
