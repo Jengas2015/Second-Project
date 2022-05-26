@@ -1,16 +1,65 @@
 @use 'variables' as *;
+@use 'mixins' as *;
 
+.header{
+    
+    nav {
+        padding: 24px 15px 24px 15px;
+    }
 
-header {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 1.875rem 10%;
+    &__logo{
+
+        img{
+            width: 5.5625rem;
+            height: 1.9375rem; 
+        }
+    }
+
+    &__menu{//Mobile Menu
+        >span{
+            display: block;
+            width: 33px;
+            height: 3px;
+            background-color: $mediumGray;
+
+            &:not(:last-child) {
+                margin-bottom: 5px;
+            }
+        }
+    }
+
+    &__links{
+        a {
+            font-size: $font-small;
+            transition: color 200ms ease-in-out;
+
+            &:not(:last-child) {
+                margin-right: 32px;
+            }
+
+            &:hover {
+                color: $kindaBlack;
+            }
+        }
+    }
+
+    .cta {
+        font-size: $font-small;
+
+        a{
+            margin-right: 40px;
+        }
+
+    }
+
 }
 
+
+/* 
 .logo {
     cursor: pointer;
 }
+
 
 .nav__links {
     list-style: none;
@@ -61,4 +110,4 @@ button {
         border-color: $kindaBlack;
     }
 
-}
+} */

@@ -1,49 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FEM Challenge</title>
-    <link rel="stylesheet" href="scss/main.scss">
-    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/scss/main.scss">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
 </head>
 <body>
-    <header>
+    <header class="header">
+        <nav class="flex flex-jc-sb flex-ai-c">
+            <a href="/" class="header__logo">
+                <img src="/assets/images/logo.svg" alt="Snap">
+            </a>
 
-        <nav class="flex">
-
-            <img class="logo" src="assets/images/logo.svg" alt="snap">
-
-            <a href="#" class="hamburger">
+            <a href="#" class="header__menu hide-for-desktop">
                 <span></span>
                 <span></span>
                 <span></span>
             </a>
 
-
-            <ul class="nav__links">
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Company</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">About</a></li>
-            </ul>
-
+            <div class="header__links hide-for-mobile">
+                <a href="#">Features</a>
+                <a href="#">Company</a>
+                <a href="#">Careers</a>
+                <a href="#">About</a>
+            </div>
+            
+            <div class="cta hide-for-mobile">
+                <a href="#">Login</a>
+                <a href="#" class="button">Register</a>
+            </div>
 
 
         </nav>
-        
-        <ul class="cta__links">
-            <li class="cta"><a href="#">Login</a></li>
-            <li class="cta"><a href="#"><button>Register</button></a></li>
-        </ul>
-
-
 
     </header>
 
-    <script src="main.js"></script>
+<!-- 
+  Features
+  Company
+  Careers
+  About
+
+  Login
+  Register
+
+  Make remote work
+
+  Get your team in sync, no matter your location. Streamline processes, 
+  create team rituals, and watch productivity soar.
+
+  Learn more
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+-->
+  <script src="main.js"></script>
 </body>
 </html>
