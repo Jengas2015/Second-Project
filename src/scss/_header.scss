@@ -2,7 +2,34 @@
 @use 'mixins' as *;
 
 .header{
-    
+
+    //Hamburger open styles
+
+    &.open {
+        .header__menu{
+            >span:first-child{
+                transform: rotate(45deg);
+            }
+            >span:nth-child(2){
+                opacity: 0;
+            }
+            >span:last-child{
+                transform: rotate(-45deg);
+            }
+        }
+
+    }
+
+    .overlay{
+        display: none;
+        position: fixed;
+        top: 0px;
+        right: 15.0625rem;
+        bottom: 0px;
+        left: 0px;
+        background: $kindaBlack;
+        opacity: 0.8;
+    }
     nav {
         padding: 24px 15px 24px 15px;
     }
@@ -21,11 +48,15 @@
             width: 33px;
             height: 3px;
             background-color: $mediumGray;
+            transition: all 300ms ease-in-out;
+            transform-origin: 5px;
 
             &:not(:last-child) {
                 margin-bottom: 5px;
             }
         }
+
+
     }
 
     &__links{
@@ -48,11 +79,19 @@
 
         a{
             margin-right: 40px;
+            transition: color 200ms ease-in-out;
+
+            &:hover {
+                color: $kindaBlack;
+            }
         }
 
     }
 
 }
+
+
+
 
 
 /* 
