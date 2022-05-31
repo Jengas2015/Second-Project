@@ -1,14 +1,39 @@
 @keyframes fade-in {
     from{
-        display: none;
+        visibility: hidden;
         opacity: 0;
     }
-    1% {
-        display: block;
+1% {
+    visibility: visible;
+    opacity: 0;
+}
+    to {
+        opacity: 0.8;
+        visibility: visible;
+    }
+}
+
+.fade-in {
+    animation: fade-in 300ms ease-in-out forwards;  //"fade in" was defined in the animations.scss. "forwards" makes it so that the animation stops at the "to" portion instead of reverting to the beginning of the animation cycle once it's completed.
+}
+
+
+@keyframes fade-out {
+    from{
+        visibility: visible;
+        opacity: 0.8;
+    }
+
+    99% {
+        visibility: visible;
         opacity: 0;
     }
     to {
-        display: block;
-        opacity: 1;
+        visibility: hidden;
+        opacity: 0;
     }
+}
+
+.fade-out {
+    animation: fade-out 300ms ease-in-out forwards;
 }

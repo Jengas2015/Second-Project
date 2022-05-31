@@ -6,7 +6,8 @@
     //Hamburger open styles
 
     &.open {
-        .header__menu{
+
+        .header__toggle{
             >span:first-child{
                 transform: rotate(45deg);
             }
@@ -21,12 +22,13 @@
     }
 
     .overlay{
-        display: none;
+        visibility: hidden;
         position: fixed;
         top: 0px;
-        right: 15.0625rem;
+        right: 0px;
         bottom: 0px;
         left: 0px;
+        width: 35%;
         background: $kindaBlack;
         opacity: 0.8;
     }
@@ -42,7 +44,7 @@
         }
     }
 
-    &__menu{//Mobile Menu
+    &__toggle{//Mobile Menu Toggle
         >span{
             display: block;
             width: 33px;
@@ -57,6 +59,23 @@
         }
 
 
+    }
+
+    &__menu{
+        display: block;
+        background: $almostWhite;
+        float: right;
+        width: 65%;
+        height: 100vh;
+        padding: 1.875rem;
+        top: 0px;
+        bottom: 0px;
+
+        a {
+            color: $mediumGray;
+            display: block;
+            padding: 0.625rem;
+        }
     }
 
     &__links{
@@ -90,6 +109,22 @@
 
 }
 
+.ctaMobile {
+    position: relative;
+    text-align: center;
+
+    a {
+        margin-bottom: 1rem;
+    }
+
+
+    &.button{
+        display: inline;
+        padding: 13px 69px
+
+    }
+
+}
 
 
 
