@@ -2,6 +2,10 @@
     visibility: hidden;
 }
 
+.has-fade-menu{
+    visibility: hidden;
+}
+
 @keyframes fade-in {
     from{
         visibility: hidden;
@@ -19,6 +23,24 @@
 
 .fade-in {
     animation: fade-in 300ms ease-in-out forwards;  //"fade in" was defined in the animations.scss. "forwards" makes it so that the animation stops at the "to" portion instead of reverting to the beginning of the animation cycle once it's completed.
+}
+@keyframes fade-in-menu {
+    from{
+        visibility: hidden;
+        opacity: 0;
+    }
+1% {
+    visibility: visible;
+    opacity: 0;
+}
+    to {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.fade-in-menu {
+    animation: fade-in-menu 300ms ease-in-out forwards;
 }
 
 
@@ -39,5 +61,24 @@
 }
 
 .fade-out {
+    animation: fade-out 300ms ease-in-out forwards;
+}
+@keyframes fade-out-menu {
+    from{
+        visibility: visible;
+        opacity: 1;
+    }
+
+    99% {
+        visibility: visible;
+        opacity: 0;
+    }
+    to {
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+.fade-out-menu {
     animation: fade-out 300ms ease-in-out forwards;
 }

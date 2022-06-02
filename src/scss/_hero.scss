@@ -1,0 +1,16 @@
+@use 'variables';
+@use 'mixins';
+
+.hero {
+    &__image {
+       background-image: url('/assets/images/image-hero-mobile.png');
+       background-size: cover;
+       background-repeat: no-repeat;
+       background-position: center center;
+       min-height: 18.75rem;
+    }
+
+    &__text {
+
+    }
+}
