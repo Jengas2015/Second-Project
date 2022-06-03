@@ -31,6 +31,10 @@
         width: 35%;
         background: $kindaBlack;
         opacity: 0.8;
+
+        @include breakpoint-up (large) {
+            display:none;
+        }
     }
     nav {
         padding: 24px 15px 24px 15px;
