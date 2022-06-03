@@ -26,12 +26,13 @@ body {
     overflow: hidden;
   }
 
+  a, a:visited, a:hover {
+    text-decoration: none;
+  }
+
 }
 
-a, a:visited, a:hover {
-  text-decoration: none;
-  color: $mediumGray;
-}
+
 
 // Spacing
 .container {

@@ -72,7 +72,11 @@
         padding: 1.875rem;
         top: 0px;
         bottom: 0px;
-        z-index: 100;
+
+        @include breakpoint-up(large) {
+            display: none;
+        }
+
 
         a {
             color: $mediumGray;
@@ -92,6 +96,7 @@
 
             &:hover {
                 color: $kindaBlack;
+                font-weight: 700;
             }
         }
     }
@@ -101,10 +106,11 @@
 
         a{
             margin-right: 40px;
-            transition: color 200ms ease-in-out;
+            transition: color 300ms ease-in-out;
 
             &:hover {
                 color: $kindaBlack;
+                font-weight: 700;
             }
         }
 
