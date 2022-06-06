@@ -1,0 +1,22 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.footer{ 
+    position: absolute;
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    @include breakpoint-up (large) {
+        justify-content: left;
+        margin-top: 6.63rem;
+    }
+
+    a {
+        margin-right: 1.56rem;
+        img{
+            max-height: 1.19rem;
+        }
+    }
+}
