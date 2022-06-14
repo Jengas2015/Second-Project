@@ -4,6 +4,9 @@ const header = document.querySelector('.header');
 const fadeElems = document.querySelectorAll('.has-fade');
 const fadeMenu = document.querySelector('.has-fade-menu');
 
+const dropdown=Array.from(document.querySelectorAll('.dropdown'));
+const subMenu=document.querySelector('.subMenu');
+
 btnHamburger.addEventListener('click', function() {
 
     if(header.classList.contains('open')) {// Close Hamburger Menu
@@ -30,3 +33,11 @@ btnHamburger.addEventListener('click', function() {
     } 
 
 })
+
+dropdown.forEach((dropdown) => {
+    dropdown.addEventListener('click', (e)=> {
+        e.preventDefault;
+        e.target.parentNode.classList.toggle("open");
+    });
+});
+
