@@ -1,6 +1,11 @@
 @use 'variables' as *;
 @use 'mixins' as *;
 
+
+
+
+
+
 .header{
     //Hamburger open styles
 
@@ -108,6 +113,9 @@
 
             transition: color 200ms ease-in-out;
 
+            &:not(:last-child) {
+                margin-right: 32px;
+            }
 
             &:hover {
                 color: $kindaBlack;
