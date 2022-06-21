@@ -1,11 +1,6 @@
 @use 'variables' as *;
 @use 'mixins' as *;
 
-
-
-
-
-
 .header{
     //Hamburger open styles
 
@@ -102,22 +97,6 @@
 
         position: relative;
 
-
-        .menu-item{
-            display: inline-block;
-            position: relative;
-        }
-
-
-        .sub-menu{
-            display: flex;
-            flex-direction: column;
-            position: relative;
-            border: solid red 1px;
-            text-align: start;
-
-        }
-
         ul{
             list-style:none;
             padding:0;
@@ -129,24 +108,12 @@
 
             transition: color 200ms ease-in-out;
 
-            img{ //arrowDown
-                margin-left: 3px;
-                transition: all  300ms;
-            }
-
-            &:not(.sub-menu) {
-                margin-right: 32px;
-            }
 
             &:hover {
                 color: $kindaBlack;
                 font-weight: 700;
             }
         }
-    }
-
-    .subMenu.open .arrowDown{
-        transform: rotate(180deg);
     }
 
 
